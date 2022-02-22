@@ -157,6 +157,43 @@
   color: black;
 }
 
+.overlay {
+  display: block;
+  height: 30px;
+  font-family: helvetica;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 1px #ccc;
+  border: 1px solid white;
+  box-shadow: 0px 0px 4px #ccc;
+  position: absolute;
+  padding: 5px;
+  margin-left: 78px;
+  margin-top: -40px;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+.color__whatsapp {
+  background: #4CED69;
+}
+
+.color__instagram {
+background: linear-gradient(#4f5bd5, #962fbf,  #d62976, #fa7e1e, #feda75);
+}
+
+.color__facebook {
+  background: #4867AA;
+}
+
+.aside__ul li:hover .overlay {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+
+
 .aside__wrap--img {
   width: 80%;
   height: 100%;
@@ -830,7 +867,13 @@
   width: 45%;
   padding: 5px;
   margin: 8px;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+  transition: all 1.1s;
+}
+
+.section__catalogo--productos .card:hover {
+  transform: scale(1.08);
 }
 
 .card__contenedor--img {
@@ -1047,7 +1090,6 @@
   }
 
   .nosotros__contenedor--info span {
-  
     margin-top: -9px;
   }
   .nosotros__contenedor--info h2 {
