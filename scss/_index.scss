@@ -107,7 +107,7 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
   align-items: center;
   width: 20%;
 
-  input {
+  .btnWhite {
     padding: 8px 18px 8px 18px;
     margin-left: 10px;
     border: 1px solid #c4c4c4;
@@ -117,10 +117,18 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
     cursor: pointer;
   }
 
-  input:last-child {
+  // input:last-child {
+  //   background-color: black;
+  //   color: white;
+  //   border: none;
+  // }
+
+  .btnBlack {
+    @extend .btnWhite;
     background-color: black;
     color: white;
     border: none;
+
   }
 }
 
