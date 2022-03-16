@@ -1,5 +1,6 @@
 $sombraNav: rgba(0, 0, 0, 0.11);
 $colorBtnPrincipal: rgba(0, 0, 0, 0.29); 
+$colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
 
 .layout__index {
   display: grid;
@@ -172,17 +173,31 @@ $colorBtnPrincipal: rgba(0, 0, 0, 0.29);
   transition: all 0.7s;
 }
 
-.color__whatsapp {
-  background: #4ced69;
+//MAPS
+$rrss: ( /* declaramos nuestro mapa*/
+        whatsapp: #4ced69,
+        instagram: $colorGradiente,
+        facebook: #4867aa
+);
+
+//bucle para recorre el mapa
+@each $redSocial, $color in $rrss {
+   .color__#{$redSocial} {
+    background: $color;
+}
 }
 
-.color__instagram {
-  background: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
-}
+// .color__whatsapp {
+//   background: #4ced69;
+// }
 
-.color__facebook {
-  background: #4867aa;
-}
+// .color__instagram {
+//   background: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+// }
+
+// .color__facebook {
+//   background: #4867aa;
+// }
 
 .aside__wrap--img {
   width: 80%;
@@ -235,10 +250,18 @@ $colorBtnPrincipal: rgba(0, 0, 0, 0.29);
   }
 }
 
+//MIXIN
+@mixin detail( $position, $ml, $mt) {
+  position: $position;
+  margin-left: $ml;
+  margin-top: $mt;
+}
+
 .main__shop {
-  position: absolute;
-  margin-left: 91%;
-  margin-top: 36.2%;
+  // position: absolute;
+  // margin-left: 91%;
+  // margin-top: 36.2%;
+  @include detail(absolute, 91%, 36.2%)
 }
 
 .main__shop--icono {
