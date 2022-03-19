@@ -117,12 +117,6 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
     cursor: pointer;
   }
 
-  // input:last-child {
-  //   background-color: black;
-  //   color: white;
-  //   border: none;
-  // }
-
   .btnBlack {
     @extend .btnWhite;
     background-color: black;
@@ -195,18 +189,6 @@ $rrss: ( /* declaramos nuestro mapa*/
 }
 }
 
-// .color__whatsapp {
-//   background: #4ced69;
-// }
-
-// .color__instagram {
-//   background: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
-// }
-
-// .color__facebook {
-//   background: #4867aa;
-// }
-
 .aside__wrap--img {
   width: 80%;
   height: 100%;
@@ -266,9 +248,6 @@ $rrss: ( /* declaramos nuestro mapa*/
 }
 
 .main__shop {
-  // position: absolute;
-  // margin-left: 91%;
-  // margin-top: 36.2%;
   @include detail(absolute, 91%, 36.2%)
 }
 
