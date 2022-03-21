@@ -35,7 +35,8 @@
     grid-area: pie;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-family: "Times New Roman", Times, serif; }
 
 .btn__menu {
   margin-right: 30px;
@@ -51,7 +52,7 @@
   height: auto;
   text-align: center; }
   .index__wrap--img img {
-    margin-top: 7.6px;
+    margin-top: -10px;
     width: 80%;
     height: 80%; }
 
@@ -63,7 +64,8 @@
   list-style: none; }
   .nav__wrap--menu li {
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif; }
   .nav__wrap--menu li a {
     color: #515050;
     text-decoration: none;
@@ -77,18 +79,20 @@
   justify-content: end;
   align-items: center;
   width: 20%; }
-  .nav__wrap--botones input {
+  .nav__wrap--botones .btnWhite, .nav__wrap--botones .btnBlack {
     padding: 8px 18px 8px 18px;
     margin-left: 10px;
     border: 1px solid #c4c4c4;
     border-radius: 7px;
     background-color: white;
     color: #b4b3b3;
-    cursor: pointer; }
-  .nav__wrap--botones input:last-child {
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif; }
+  .nav__wrap--botones .btnBlack {
     background-color: black;
     color: white;
-    border: none; }
+    border: none;
+    font-family: "Times New Roman", Times, serif; }
 
 .footer {
   color: white; }
@@ -159,10 +163,12 @@
 .section__article p {
   margin-top: 15px;
   color: #515050;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif; }
 
 .section__article input {
   font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 22px 10px 22px;
@@ -179,10 +185,92 @@
 
 .main__shop {
   position: absolute;
-  /* margin-left: 1250px;
-    margin-top: 500px; */
   margin-left: 91%;
   margin-top: 36.2%; }
 
 .main__shop--icono {
   color: #181717; }
+
+/* ************************************** MEDIA QUERY INDEX ************************************** */
+@media (max-width: 1024px) {
+  .layout__index .index__layout--main {
+    grid-template-columns: 50% 35%; }
+  .section__header {
+    font-size: 36px;
+    line-height: 50px; }
+  .aside__wrap--img img {
+    width: 119%;
+    margin-top: -29px;
+    margin-left: -2%; }
+  .aside__ul {
+    padding-left: 15px; }
+  .main__shop {
+    position: absolute;
+    margin-left: 90.4%;
+    margin-top: 46%; } }
+
+@media (max-width: 768px) {
+  .main__shop {
+    position: absolute;
+    margin-left: 91.4%;
+    margin-top: 90%; }
+  .aside__ul {
+    width: 20%; }
+  .aside__wrap--img img {
+    width: 144%;
+    margin-top: 0px;
+    margin-left: -13%; }
+  .layout__index .section {
+    margin-left: 10%; } }
+
+@media (max-width: 427px) {
+  .layout__index {
+    grid-template-rows: 10% 84% auto; }
+    .layout__index .index__layout--main {
+      grid-template-areas: "aside" "section";
+      justify-content: center;
+      grid-template-columns: 90%; }
+  .navbar > .container {
+    margin-top: -3%; }
+  .aside {
+    flex-direction: column-reverse; }
+  .aside__wrap--img img {
+    width: 65%;
+    margin-top: 0px;
+    margin-left: 16%; }
+  .aside__ul {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: -19%; }
+  .section__article input {
+    margin-top: 0px; }
+  .section__header {
+    margin-top: -17%; }
+  .main__shop {
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 145%; }
+  .fondo__navbar {
+    background-color: white; } }
+
+@media (max-width: 375px) {
+  .aside__ul {
+    width: 49%; }
+  .main__shop {
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 154%; }
+  .fondo__navbar {
+    background-color: white; } }
+
+@media (max-width: 320px) {
+  .main__shop {
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 182%; }
+  .aside__ul {
+    width: 56%; }
+  .fondo__navbar {
+    background-color: white; } }

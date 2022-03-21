@@ -11,7 +11,6 @@
 /* Estructura general con grid */
 /* Se encuentra en el archivo scss */
 
-
 /* ---------------------------- NOSOTROS ---------------------------- */
 
 .layout__nosotros {
@@ -284,7 +283,7 @@
 .clientes__contenedor {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top: 2%;
   justify-content: center;
 }
 
@@ -293,7 +292,7 @@
   border: 2px solid #d2cfcf;
   margin: 4px 2px;
   width: 48%;
-  height: 40%;
+  height: 30%;
   display: flex;
 }
 
@@ -396,7 +395,8 @@
 }
 
 .contactanos__section {
-  margin-left: 50px;
+  margin-left: 45px;
+  margin-top: -40px;
   width: 25%;
   background-color: white;
   padding: 8px;
@@ -432,16 +432,16 @@
 .contactanos__section textarea {
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px;
 }
 
 .contactanos__section form input[type="submit"] {
   background-color: black;
   color: white;
-  padding: 8px;
-  width: 80px;
-  margin-top: 20px;
-  margin-left: 200px;
+  padding: 3px;
+  width: 70px;
+  margin-top: 15px;
+  margin-left: 193px;
 }
 
 /* ---------------------------- CATALOGO ---------------------------- */
@@ -675,111 +675,18 @@
   align-items: center;
 }
 
-/* ************************************** MEDIA QUERY INDEX ************************************** */
-
-@media (max-width: 601px) {
-  .visibility {
-    display: none;
-  }
-
-  .layout__index nav {
-    justify-content: space-between;
-    padding: 0px 12px;
-  }
-
-  .index__wrap--img {
-    width: 28%;
-  }
-
-  .layout__index .index__layout--main {
-    grid-template-areas:
-      "aside"
-      "section";
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-  }
-
-  .layout__index .aside {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .section {
-    width: 90%;
-    margin-left: 10px;
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .aside {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section input {
-    margin-left: 30px;
-    font-size: 24px;
-    margin-top: 10px;
-  }
-
-  .index__layout--main .aside {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .aside__ul {
-    display: flex;
-    width: 200px;
-    flex-direction: rows;
-    background-color: transparent;
-    border-bottom: 1px solid #feca74;
-    border-radius: 0px 0px 0px 0px;
-    margin-left: -304px;
-    margin-top: 310px;
-  }
-
+@media (max-width: 1024px) {
   .section__header {
+    color: green;
     font-weight: bolder;
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .section__article p {
-    display: flex;
-    text-align: justify;
-  }
-  .main__shop {
-    margin-left: 89.5%;
-    margin-top: 5%;
-  }
-  .btn__menu {
-    display: block;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 7%;
-  }
-
-  .btn__menu a {
-    color: black;
-  }
-
-  .aside__wrap--img {
-    margin-left: -70px;
-    margin-top: 60px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-  }
-
-  .aside__wrap--img img {
-    width: 60%;
-    margin-left: 15%;
+    font-size: 45px;
+    line-height: 60px;
   }
 }
 
 /* ************************************** MEDIA QUERY NOSOTROS ************************************** */
 
-@media (max-width: 601px) {
+/* @media (max-width: 601px) {
   .layout__nosotros nav {
     justify-content: space-between;
     padding: 0px 12px;
@@ -840,10 +747,10 @@
   }
 
   .nosotros__contenedor--info span {
-    margin-top: -9px;
+    margin-top: -50px;
   }
   .nosotros__contenedor--info h2 {
-    margin-top: -80px;
+    margin-top: -10px;
   }
   .nosotros__contenedor--info p {
     margin-top: 20px;
@@ -856,5 +763,45 @@
   .nosotros__caja:last-child {
     margin-left: -50px;
     width: 150%;
+  }
+} */
+@media (max-width: 1024px) {
+  .nosotros__info {
+    flex-direction: column;
+  }
+
+  .nosotros__main--aside {
+    flex-direction: row;
+    min-height: 210px;
+  }
+
+  .contenido__caja2 {
+    flex-direction: column;
+  }
+
+  .nosotros__contenedor--info p {
+    margin-top: 45px;
+  }
+
+  .nosotros__contenedor--info span {
+    margin-top: -24px;
+  }
+
+  .nosotros__contenedor--img {
+   margin-left: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nosotros__contenedor__imgDog img {
+    width: 320px;
+    margin-left: -101px;
+  }
+
+  .nosotros__contenedor--img img {
+    /* width: 300px;
+    height: 300px; */
+    margin-left: -73px;
   }
 }
