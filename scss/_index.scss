@@ -5,7 +5,6 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
 .layout__index {
   display: grid;
   height: 100vh;
-  /* width: 100vw; */
   grid-template-areas:
     "menu"
     "main"
@@ -16,13 +15,10 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
   nav {
     grid-area: menu;
     display: flex;
-    border-bottom: 1px solid #cdc1c1;
-    box-shadow: 2px 6px 6px 0px $sombraNav;
-    -webkit-box-shadow: 2px 6px 6px 0px $sombraNav;
-    -moz-box-shadow: 2px 6px 6px 0px $sombraNav;
     position: relative;
     z-index: 2;
   }
+
 
   .index__layout--main {
     grid-area: main;
@@ -51,7 +47,7 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
     grid-area: pie;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     font-family: "Times New Roman", Times, serif;
   }
 }
@@ -66,13 +62,11 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
 
 /* Navbar */
 .index__wrap--img {
-  /* width: 250px; */
   width: 18%;
   height: auto;
   text-align: center;
 
   img {
-    // margin-top: 7.6px;
     margin-top: -10px;
 
     width: 80%;
@@ -91,6 +85,7 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
     font-size: 20px;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
+    margin-left: 60px;
   }
 
   li a {
@@ -182,7 +177,8 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
 
 //MAPS
 $rrss: (
-  /* declaramos nuestro mapa*/ whatsapp: #4ced69,
+  /* declaramos nuestro mapa*/ 
+  whatsapp: #4ced69,
   instagram: $colorGradiente,
   facebook: #4867aa
 );
@@ -255,7 +251,7 @@ $rrss: (
 }
 
 .main__shop {
-  @include detail(absolute, 91%, 36.2%);
+  @include detail(absolute, 88.8%, 36.2%);
 }
 
 .main__shop--icono {
@@ -310,7 +306,6 @@ $rrss: (
   .layout__index .section {
     margin-left: 10%;
   }
-
 }
 
 @media (max-width: 427px) {
@@ -358,9 +353,6 @@ $rrss: (
 
   .main__shop {
     @include detail(absolute, 87%, 145%);
-  }
-  .fondo__navbar {
-    background-color: white;
   }
 }
 
