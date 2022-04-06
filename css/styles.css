@@ -55,7 +55,7 @@
 
 .nosotros__caja:last-child {
   margin-top: 10%;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,8 +116,8 @@
   justify-content: start;
   text-align: center;
   padding: 25px;
-  background-color: #faf6f0;
-  border: 2px solid rgba(128, 128, 128, 0.658);
+  /* background-color: #faf6f0; */
+  /* border: 2px solid rgba(128, 128, 128, 0.658); */
   border-radius: 10px;
   font-size: 17px;
 }
@@ -180,12 +180,13 @@
   justify-content: center;
   text-align: center;
   font-size: 14px;
-  margin-top: -65px;
+  margin-top: -30px;
+  margin-left: 35px;
   color: #7d6666;
   text-transform: uppercase;
   font-weight: bold;
   background-color: #f2f2f2;
-  width: 100%;
+  width: 80%;
 }
 .nosotros__contenedor--info p {
   text-align: justify;
@@ -356,8 +357,6 @@
   width: 25%;
   color: white;
 }
-
-/* asdasdasd */
 
 .contactanos__aside div {
   width: 25%;
@@ -686,85 +685,6 @@
 
 /* ************************************** MEDIA QUERY NOSOTROS ************************************** */
 
-/* @media (max-width: 601px) {
-  .layout__nosotros nav {
-    justify-content: space-between;
-    padding: 0px 12px;
-    width: 103%;
-  }
-
-  .nosotros__footer {
-    width: 69%;
-    text-align: center;
-  }
-
-  .nosotros__header h1 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-
-  .nosotros__info {
-    justify-content: space-around;
-    flex-direction: column;
-    margin-left: -70px;
-    width: 180%;
-  }
-
-  .nosotros__main--aside {
-    height: 50px;
-  }
-
-  .nosotros__contenedor__imgDog {
-    margin-left: -5px;
-    width: 100%;
-  }
-
-  .nosotros__contenedor__imgDog img {
-    width: 80%;
-    object-fit: cover;
-  }
-
-  .contenido__caja2 {
-    flex-direction: column;
-    margin-left: -70px;
-    width: 180%;
-  }
-
-  .nosotros__contenedor--img {
-    margin-left: 67px;
-    width: 55%;
-  }
-
-  .nosotros__contenedor--img img {
-    margin-left: 5px;
-    width: 100%;
-    height: 70%;
-  }
-
-  .nosotros__contenedor--info {
-    margin-left: 80px;
-    width: 50%;
-  }
-
-  .nosotros__contenedor--info span {
-    margin-top: -50px;
-  }
-  .nosotros__contenedor--info h2 {
-    margin-top: -10px;
-  }
-  .nosotros__contenedor--info p {
-    margin-top: 20px;
-  }
-
-  .nosotros__contenedor--info ul {
-    margin-bottom: 20px;
-  }
-
-  .nosotros__caja:last-child {
-    margin-left: -50px;
-    width: 150%;
-  }
-} */
 @media (max-width: 1024px) {
   .nosotros__info {
     flex-direction: column;
@@ -788,12 +708,15 @@
   }
 
   .nosotros__contenedor--img {
-   margin-left: 90px;
+    margin-left: 90px;
+  }
+
+  .nav__wrap--menu {
+    width: 45%;
   }
 }
 
 @media (max-width: 768px) {
-
   .nosotros__contenedor__imgDog img {
     width: 320px;
     margin-left: -101px;
@@ -804,4 +727,266 @@
     height: 300px; */
     margin-left: -73px;
   }
+}
+
+@media (max-width: 412px) {
+  .nosotros__main--aside {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nosotros__contenedor--img {
+    margin-bottom: 61px;
+  }
+  .nosotros__contenedor--img img {
+    margin-left: -52px;
+    width: 287px;
+    height: 287px;
+  }
+
+  .nosotros__contenedor--info {
+    margin-top: -189px;
+  }
+
+  .nosotros__contenedor__imgDog img {
+    width: 320px;
+    margin-left: -133px;
+    height: 222px;
+  }
+
+  .nosotros__wrap--contenido {
+    margin: 0% 0%;
+  }
+
+  .nosotros__header h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .nosotros__contenedor--info ul {
+    padding-left: 0rem;
+  }
+}
+
+/* ************************************** MEDIA QUERY SERVICIOS************************************** */
+/* DESKTOP ESTANDAR 1366 X 768*/
+@media (max-width: 1366px) {
+  /* ningun cambio */
+}
+
+/* DESKTOP MAS PEQUEÑA 1024 X 768*/
+@media (max-width: 1024px) {
+  .servicios__wrap {
+    margin-top: -8px;
+  }
+
+  .contenedor__servicios {
+    margin: 5.5% 0%;
+  }
+}
+
+/* TABLET 720 X 1024 */
+@media (max-width: 720px) {
+  .contenedor__servicios {
+    margin: -0.5% 0%;
+  }
+
+  .servicio__contenedor--descripcion p {
+    font-size: 13.8px;
+  }
+
+  .servicios__header h1 {
+    margin-top: 28px;
+  }
+}
+
+/* movile 412 X 915 */
+@media (max-width: 412px) {
+  .servicio__contenedor--descripcion p {
+    font-size: 11px;
+  }
+
+  .servicios__wrap {
+    flex-direction: column;
+  }
+
+  .servicios__wrap .servicios__caja1,
+  .servicios__caja2 {
+    width: 83%;
+    margin-left: 39px;
+  }
+}
+
+/* ************************************** MEDIA QUERY CLIENTES************************************** */
+
+/* DESKTOP ESTANDAR 1366 X 768*/
+@media (max-width: 1366px) {
+  /* ningun cambio */
+}
+
+/* DESKTOP MAS PEQUEÑA 1024 X 768*/
+@media (max-width: 1024px) {
+  .clientes__article {
+    margin: 13px 6px;
+  }
+
+  .clientes__contenedor {
+    margin-top: 1%;
+  }
+}
+
+/* TABLET 720 X 1024 */
+@media (max-width: 720px) {
+  .wrap__clientes {
+    margin: 46px 86px;
+    height: 92%;
+  }
+
+  .clientes__article {
+    height: 25%;
+  }
+
+  .clientes__header > h1 {
+    margin-bottom: 2.5rem;
+    margin-top: -10px;
+  }
+
+  .clientes__contenedor {
+    margin-top: -57px;
+    flex-direction: column;
+    height: 105%;
+  }
+}
+
+/* movile 412 X 915 */
+@media (max-width: 412px) {
+  .clientes__header > h1 {
+    margin-bottom: -0.5rem;
+    margin-top: -30px;
+  }
+
+  .wrap__clientes {
+    margin: 46px 11px;
+  }
+
+  .clientes__contenedor {
+    margin-top: -34px;
+    height: 111%;
+  }
+}
+
+/* ************************************** MEDIA QUERY CONTACTOS ************************************** */
+
+/* DESKTOP ESTANDAR 1366 X 768*/
+@media (max-width: 1366px) {
+  .contactos__fondo--negro {
+    height: 635px;
+    margin-top: -604px;
+  }
+
+  .wrap__contactanos img {
+    height: 561px;
+    margin-top: 37px;
+  }
+
+  .contactanos__aside ul {
+    padding-left: 0rem;
+  }
+
+  .wrap__contactanos--contenido {
+    margin-top: -536px;
+  }
+}
+/* DESKTOP MAS PEQUEÑA 1024 X 768*/
+@media (max-width: 1024px) {
+  .contactanos__aside {
+    width: 35%;
+    margin-left: 189px;
+  }
+
+  .contactanos__section {
+    width: 34%;
+    margin-left: 17px;
+  }
+}
+
+/* TABLET 720 X 1024 */
+@media (max-width: 720px) {
+  .wrap__contactanos--contenido {
+    flex-direction: column;
+    margin-top: -592px;
+  }
+
+  .contactanos__aside {
+    flex-direction: column;
+    margin-left: 102px;
+    margin-top: -234px;
+  }
+
+  .contactanos__aside ul {
+    padding-left: 16rem;
+    margin-top: -217px;
+  }
+
+  .contactanos__aside ul li a {
+    font-size: 18px;
+  }
+  .fa-envelope {
+    margin-right: 20px;
+  }
+
+  .fa-phone {
+    margin-right: 20px;
+  }
+
+  .fa-map-marker-alt {
+    margin-right: 20px;
+  }
+
+  .contactanos__aside ul li a {
+    display: flex;
+  }
+
+  .contactanos__section {
+    width: 50%;
+    margin-left: 179px;
+    margin-top: -24px;
+  }
+
+  .wrap__contactanos img {
+    height: 851px;
+    margin-top: 1px;
+    margin-left: 82px;
+    width: 77%;
+  }
+
+  .contactos__fondo--negro {
+    height: 874px;
+    margin-top: -871px;
+  }
+}
+
+/* movile 412 X 915 */
+@media (max-width: 412px) {
+  /* FALTA */
+}
+
+/* ************************************** MEDIA QUERY CATALOGO************************************** */
+
+/* DESKTOP ESTANDAR 1366 X 768*/
+@media (max-width: 1366px) {
+
+}
+
+/* DESKTOP MAS PEQUEÑA 1024 X 768*/
+@media (max-width: 1024px) {
+ 
+}
+
+/* TABLET 720 X 1024 */
+@media (max-width: 720px) {
+  
+}
+
+/* movile 412 X 915 */
+@media (max-width: 412px) {
+  
 }

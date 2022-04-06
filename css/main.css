@@ -28,10 +28,10 @@
   .layout__index footer {
     background-color: black;
     grid-area: pie;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif; }
+    color: white;
+    text-align: center; }
+  .layout__index .span__footer {
+    color: white; }
 
 .btn__menu {
   margin-right: 30px;
@@ -187,6 +187,10 @@
   color: #181717; }
 
 /* ************************************** MEDIA QUERY INDEX ************************************** */
+@media (max-width: 1366px) {
+  .aside__wrap--img img {
+    margin-top: -18px; } }
+
 @media (max-width: 1024px) {
   .layout__index .index__layout--main {
     grid-template-columns: 50% 35%; }
@@ -201,22 +205,24 @@
     padding-left: 15px; }
   .main__shop {
     position: absolute;
-    margin-left: 90.4%;
-    margin-top: 46%; } }
+    margin-left: 94%;
+    margin-top: 46.5%; }
+  .nav__wrap--botones .btnWhite, .nav__wrap--botones .btnBlack, .nav__wrap--botones .btnBlack {
+    display: none; } }
 
 @media (max-width: 768px) {
   .main__shop {
-    position: absolute;
-    margin-left: 91.4%;
-    margin-top: 90%; }
+    display: none; }
   .aside__ul {
     width: 20%; }
-  .aside__wrap--img img {
-    width: 144%;
-    margin-top: 0px;
-    margin-left: -13%; }
+  .aside .aside__wrap--img img {
+    width: 156%;
+    margin-top: 88px;
+    margin-left: -24%; }
   .layout__index .section {
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .section__header h1 h1 {
+    margin-top: -49px; } }
 
 @media (max-width: 427px) {
   .layout__index {
@@ -247,6 +253,22 @@
     position: absolute;
     margin-left: 87%;
     margin-top: 145%; } }
+
+@media (max-width: 412px) {
+  .aside .aside__wrap--img img {
+    width: 117%;
+    margin-top: -49px;
+    margin-left: -8%; }
+  .section .section__header h1 {
+    margin-top: 22px; }
+  .section__article input {
+    margin-top: 15px;
+    margin-left: 60px; }
+  .main__shop {
+    display: none; }
+  .layout__index aside .aside__ul {
+    margin-top: -10%;
+    margin-bottom: 10%; } }
 
 @media (max-width: 375px) {
   .aside__ul {

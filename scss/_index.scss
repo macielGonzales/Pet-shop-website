@@ -45,11 +45,14 @@ $colorGradiente: linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
   footer {
     background-color: black;
     grid-area: pie;
-    display: flex;
-    justify-content: center;
+    color: white;
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
   }
+
+  .span__footer {
+    color: white;
+  }
+
 }
 
 .btn__menu {
@@ -262,6 +265,15 @@ $rrss: (
 
 /* ************************************** MEDIA QUERY INDEX ************************************** */
 
+//RESPONSIVE PARA LAPTOP
+@media (max-width: 1366px) {
+
+  .aside__wrap--img img {
+    margin-top: -18px;
+  }
+}
+
+//RESPONSIVE PARA LAPTOP
 @media (max-width: 1024px) {
   .layout__index {
     .index__layout--main {
@@ -287,24 +299,35 @@ $rrss: (
   }
 
   .main__shop {
-    @include detail(absolute, 90.4%, 46%);
+    @include detail(absolute, 94%, 46.5%);
+  }
+
+  .nav__wrap--botones .btnWhite, .nav__wrap--botones .btnBlack {
+    display: none;
   }
 }
 
+//RESPONSIVE PARA TABLET
 @media (max-width: 768px) {
   .main__shop {
-    @include detail(absolute, 91.4%, 90%);
+    display: none;
   }
   .aside__ul {
     width: 20%;
   }
-  .aside__wrap--img img {
-    width: 144%;
-    margin-top: 0px;
-    margin-left: -13%;
+  .aside .aside__wrap--img img {
+    width: 156%;
+    margin-top: 88px;
+    margin-left: -24%;
   }
   .layout__index .section {
     margin-left: 10%;
+  }
+  .section__header h1 {
+    h1 {
+      margin-top: -49px;
+    }
+
   }
 }
 
@@ -354,6 +377,34 @@ $rrss: (
   .main__shop {
     @include detail(absolute, 87%, 145%);
   }
+}
+
+//RESPONSIVE PARA MOVIL
+
+@media (max-width: 412px) {
+  .aside .aside__wrap--img img {
+    width: 117%;
+    margin-top: -49px;
+    margin-left: -8%;
+  }
+
+  .section .section__header h1 {
+    margin-top: 22px;
+  }
+
+  .section__article input {
+    margin-top: 15px;
+    margin-left: 60px;
+  }
+  .main__shop {
+    display: none;
+  }
+
+  .layout__index  aside .aside__ul {
+    margin-top: -10%;
+    margin-bottom: 10%;
+  }
+  
 }
 
 @media (max-width: 375px) {
