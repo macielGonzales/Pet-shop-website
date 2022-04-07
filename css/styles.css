@@ -441,6 +441,11 @@
   margin-left: 193px;
 }
 
+.posicionNav {
+  position: relative;
+  z-index: 3;
+}
+
 /* ---------------------------- CATALOGO ---------------------------- */
 
 .layout__catalogo {
@@ -716,6 +721,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .nosotros__contenedor__imgDog img {
     width: 320px;
@@ -967,6 +973,50 @@
 /* movile 412 X 915 */
 @media (max-width: 412px) {
   /* FALTA */
+
+  .wrap__contactanos img {
+    height: 727px;
+    margin-left: 12px;
+    width: 95%;
+  }
+
+  .contactos__fondo--negro {
+    height: 787px;
+    margin-top: -742px;
+  }
+
+  .wrap__contactanos--contenido {
+    margin-top: 519px;
+  }
+
+  .contactanos__aside {
+    margin-top: -1284px;
+    margin-left: 26px;
+  }
+
+  .contactanos__section {
+    width: 89%;
+    margin-top: -20px;
+    margin-left: 22px;
+  }
+
+  .contactanos__aside ul {
+    padding-left: 10rem;
+    margin-top: -262px;
+  }
+
+  .wrap__contactanos--contenido h2{
+    font-size: 17px;
+  }
+
+  .wrap__contactanos--contenido p {
+    font-size: 15px;
+  }
+
+  .wrap__contactanos--contenido ul li a {
+    font-size: 14px;
+  }
+
 }
 
 /* ************************************** MEDIA QUERY CATALOGO************************************** */
@@ -1100,23 +1150,23 @@
   .footer__catalogo {
     width: 100%;
     margin-left: -20px;
-}
+  }
 
-.header__catalogo > h1 {
-  margin-top: 27px;
-  margin-left: -91px;
-}
+  .header__catalogo > h1 {
+    margin-top: 27px;
+    margin-left: -91px;
+  }
 
-.header__catalogo input {
-  width: 120%;
-  display: block;
-  margin-left: 52px;
-  margin-top: 30px;
-}
+  .header__catalogo input {
+    width: 120%;
+    display: block;
+    margin-left: 52px;
+    margin-top: 30px;
+  }
 
-.fa-search {
-  position: absolute;
-  top: 142px;
-  right: 60px;
-}
+  .fa-search {
+    position: absolute;
+    top: 142px;
+    right: 60px;
+  }
 }
